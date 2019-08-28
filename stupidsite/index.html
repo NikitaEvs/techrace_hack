@@ -17,7 +17,7 @@ function myFunction() {
   let i = 0, j = 0;
   j = Math.floor(Math.random() * 4);
   let turn = turns[j];
-  document.getElementById("Kek") = 'Opponent choise is ' + turn;
+  document.getElementById("Kek").value = 'Opponent choise is ' + turn;
   if(playerTurn === "lizard") {
   	i = 0;
   } else if (playerTurn === "rock") {
