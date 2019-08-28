@@ -4,8 +4,8 @@
 
 Your turn (rock/paper/scissors/spock/lizard) <input type="text" id="myText">
 
-<p id = "Kek">
-<p id = "Res">
+<p id = "Kek"></p>
+<p id = "Res"></p>
 
 <button onclick="myFunction()">Play</button>
 
@@ -17,7 +17,7 @@ function myFunction() {
   let i = 0, j = 0;
   j = Math.floor(Math.random() * 4);
   let turn = turns[j];
-  document.getElementById("Kek").value = 'Opponent choise is ' + turn;
+  document.getElementById("Kek").innerHTML = 'Opponent choise is ' + turn;
   if(playerTurn === "lizard") {
   	i = 0;
   } else if (playerTurn === "rock") {
@@ -30,11 +30,11 @@ function myFunction() {
   	i = 4;
   }
   if(map[i][j] === 0) {
-  	document.getElementById("Res").value = "Result: draw";
+  	document.getElementById("Res").innerHTML = "Result: draw";
   } else if(map[i][j] == 1) {
-  	document.getElementById("Res").value = "Result: opponent win";
+  	document.getElementById("Res").innerHTML = "Result: opponent win";
   } else {
-  	document.getElementById("Res").value = "Result: you win!";
+  	document.getElementById("Res").innerHTML = "Result: you win!";
   }
 }
 </script>
