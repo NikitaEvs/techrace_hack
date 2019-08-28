@@ -30,11 +30,11 @@ function myFunction() {
   	i = 4;
   }
   if(map[i][j] === 0) {
-  	document.getElementById("Res") = "Result: draw";
+  	document.getElementById("Res").value = "Result: draw";
   } else if(map[i][j] == 1) {
-  	document.getElementById("Res") = "Result: opponent win";
+  	document.getElementById("Res").value = "Result: opponent win";
   } else {
-  	document.getElementById("Res") = "Result: you win!";
+  	document.getElementById("Res").value = "Result: you win!";
   }
 }
 </script>
